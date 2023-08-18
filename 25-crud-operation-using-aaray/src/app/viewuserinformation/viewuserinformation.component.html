@@ -1,0 +1,47 @@
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-sm-12">
+          <button class="btn btn-info" (click)="redirectToUserListPage()">
+            <i class="bi bi-arrow-left-circle"></i> Back
+        </button>
+          <h2>User Information</h2> 
+        </div>
+      </div>         
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>First Name</td>
+          <td>{{user.firstName}}</td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td>{{user.lastName}}</td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>{{user.email}}</td>
+        </tr>
+        <tr>
+          <td>Username</td>
+          <td>{{user.userName}}</td>
+        </tr>
+        <tr>
+            <td>Date of birth</td>
+            <td>{{user.dob}}</td>
+        </tr>
+        <tr>
+            <td>Cource</td>
+            <td>{{user.cource}}</td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>{{user.gender}}</td>
+        </tr>
+        <tr>
+            <td>Subscibe</td>
+            <td>{{user.subscribe}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

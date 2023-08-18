@@ -1,0 +1,36 @@
+
+<div class="jumbotron text-center">
+    <h2>PIPES & CUSTOM PIPES</h2>
+    <h6>PIPE is featue and it provides facility to tranform the output data into another form.</h6>
+    <h6>For Example: Tranform output from lowercase to uppercase, uppercase to lowecase etc.  </h6>
+    <h6>Check the angular Documentation for different pipes:  https://angular.io./api?query=pipe</h6>
+    <h6>We can develope our own pipe with custom logic for tranformation.</h6>
+  </div>
+  
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card" style="width:400px" appTestdirective>
+            <div class="card-body">
+              <h4 class="card-title">CUSTOM PIPE WITH SINGLE VALUE</h4>
+              <p class="card-text">{{value|uxpipe:12}} </p>
+            </div>
+         </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width:400px" appTestdirective>
+            <div class="card-body">
+              <h4 class="card-title">CUSTOM PIPE WITH LIST</h4>
+              <ul>
+                <li *ngFor="let name of nameArr">
+                    <p class="card-text">{{name|uxpipe:8}} </p> 
+                </li>
+              </ul>
+            </div>
+         </div>
+      </div>
+  </div>
+   
+</div>
+  

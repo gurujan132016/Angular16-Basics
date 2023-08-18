@@ -1,0 +1,151 @@
+  <br>
+  <div class="container">   
+    <div class="row">
+      <div class="col-sm-12">
+        <button class="btn btn-info" (click)="redirectToUserListPage()">
+            <i class="bi bi-arrow-left-circle"></i> Back
+        </button>
+          <div *ngIf="id!=0; else elseBlock">
+            <h3> Update User </h3>
+          </div>
+          <ng-template #elseBlock>
+            <h3>Add User</h3>
+          </ng-template>
+      </div>
+    </div>
+
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input [class.is-invalid]="registrationForm.get('firstName')?.invalid && registrationForm.get('firstName')?.touched" 
+                        formControlName="firstName" type="text" class="form-control">
+                        <div *ngIf="registrationForm.get('firstName')?.invalid && registrationForm.get('firstName')?.touched" >
+                            <small *ngIf="registrationForm.get('firstName')?.hasError('required')" class="text-danger">
+                                First name is required.
+                            </small>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input [class.is-invalid]="registrationForm.get('lastName')?.invalid && registrationForm.get('lastName')?.touched" 
+                    formControlName="lastName" type="text" class="form-control">
+                    <div *ngIf="registrationForm.get('lastName')?.invalid && registrationForm.get('lastName')?.touched" >
+                        <small *ngIf="registrationForm.get('lastName')?.hasError('required')" class="text-danger">
+                            Last name is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input [class.is-invalid]="registrationForm.get('email')?.invalid && registrationForm.get('email')?.touched" formControlName="email" type="text" class="form-control">
+                    <div *ngIf="registrationForm.get('email')?.invalid && registrationForm.get('email')?.touched" >
+
+                        <small *ngIf="registrationForm.get('email')?.hasError('required') && registrationForm?.get('email')?.touched" class="text-danger">
+                            Email is required.
+                        </small>
+                        <small *ngIf="registrationForm.get('email')?.hasError('email') && registrationForm?.get('email')?.touched" class="text-danger">
+                            Please enter a valid email address.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Username</label>
+                    <input [class.is-invalid]="registrationForm.get('userName')?.invalid && registrationForm.get('userName')?.touched" 
+                    formControlName="userName" type="text" class="form-control">
+                    <div *ngIf="registrationForm.get('userName')?.invalid && registrationForm.get('userName')?.touched" >
+                        <small *ngIf="registrationForm.get('userName')?.hasError('required')" class="text-danger">
+                            Username is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input [class.is-invalid]="registrationForm.get('password')?.invalid && registrationForm.get('password')?.touched" 
+                    formControlName="password" type="password" class="form-control" [disabled]="true">                    
+                    <div *ngIf="registrationForm.get('password')?.invalid && registrationForm.get('password')?.touched" >
+                        <small *ngIf="registrationForm.get('password')?.hasError('required')" class="text-danger">
+                            Password is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input [class.is-invalid]="registrationForm.get('confirmPassword')?.invalid && registrationForm.get('confirmPassword')?.touched" 
+                    formControlName="confirmPassword" type="password" class="form-control">                    
+
+                    <div *ngIf="registrationForm.get('confirmPassword')?.invalid && registrationForm.get('confirmPassword')?.touched" >
+                        <small *ngIf="registrationForm.get('confirmPassword')?.hasError('required') && registrationForm?.get('confirmPassword')?.touched" class="text-danger">
+                            Confirm password is required.
+                        </small>
+                        <small *ngIf="registrationForm.get('confirmPassword')?.hasError('misMatch') && registrationForm?.get('confirmPassword')?.touched" class="text-danger">
+                            Password and confirm password should be same.
+                        </small>
+                    </div>                    
+
+                </div>
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input [class.is-invalid]="registrationForm.get('dob')?.invalid && registrationForm.get('dob')?.touched" 
+                    formControlName="dob" type="date" class="form-control">
+                    <div *ngIf="registrationForm.get('dob')?.invalid && registrationForm.get('dob')?.touched" >
+                        <small *ngIf="registrationForm.get('dob')?.hasError('required')" class="text-danger">
+                            Date of birth is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for ="cource">Select Cource</label>
+                       <select [class.is-invalid]="registrationForm.get('cource')?.invalid && registrationForm.get('cource')?.touched"  class="form-control" id="cource" formControlName="cource">
+                        <option value="" disabled>Select an option</option>        
+                        <option *ngFor="let cource of cources" value="{{cource.value}}">
+                            {{cource.value}}
+                        </option>
+                       </select> 
+
+                    <div *ngIf="registrationForm.get('cource')?.invalid && (registrationForm.get('cource')?.dirty || registrationForm.get('cource')?.touched)" class="text-danger">
+                        <small *ngIf="registrationForm.get('cource')?.errors?.['required']">
+                            Please select cource.
+                        </small>
+                    </div>
+
+                  </div>
+                  <div class="form-group">
+                    <label for ="gender">Gender</label>
+                    <div class="custom-control custom-radio"
+                    *ngFor="let gender of genders">
+                      <input type="radio" 
+                             id="{{gender.id}}" 
+                             name="gender"
+                             value="{{gender.value}}"
+                             class="custom-control-input"
+                             formControlName="gender">
+                      &nbsp;
+                      <label class="custom-control-label" for="{{gender.id}}">{{gender.value}}</label>
+                    </div>
+                    <div *ngIf="registrationForm.get('gender')?.invalid && (registrationForm.get('gender')?.dirty || registrationForm.get('gender')?.touched)" class="text-danger">
+                        <small *ngIf="registrationForm.get('gender')?.errors?.['required']">
+                            Please select a gender.
+                        </small>
+                      </div>
+                  </div>
+
+                  <div class="form-group">
+                    <input class="form-check-input" formControlName="subscribe" type="checkbox">
+                    &nbsp;
+                    <label class="form-check-label">
+                        Send me promotional offers
+                    </label>
+                </div>
+
+                <br>
+                <button class="btn btn-success" [disabled]='!registrationForm.valid' type="submit"><i class="bi bi-database-add"></i> Submit</button>
+                &nbsp;
+                <button class="btn btn-danger" (click)="redirectToUserListPage()" type="submit"><i class="bi bi-arrow-left-circle"></i> Cancel</button>
+            </div>
+        </div>
+    </form>
+  
+   
+  

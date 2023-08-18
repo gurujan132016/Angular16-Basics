@@ -1,0 +1,18 @@
+1. How to use  bootstrap.
+    a. ngx-bootstrap
+        > It is designed wuth the help of angular native directory without jquery. 
+        > It is fully compatible with angular.
+        > npm install ngx-bootstrap --save 
+        > ng add ngx-bootstrap
+        > Documentation: https://valor-software.com/ngx-bootstrap/#/documentation#getting-started
+    
+2. Routing
+    > Routing is used to navigate from one component to another component.
+
+3. Child Routes 
+    > Example: Product > Product Details.
+        > Product is a main/parent route.
+        > Product Details is a child route.
+
+
+    

@@ -1,0 +1,25 @@
+> We can manipulate content of dom element with the help of view child.
+> We can access the child component property and method in parent component with the help of view child. 
+> We can update the child component property value in parent componet with the help of view child. 
+> we can trigger child component method from parent component with the help of view child. 
+
+1. Defne one box (#box) in Home component.
+    > <div #box>
+    >       <h1> User Name is {{userFullName}} </h1>
+    > </div>
+    > Modify content of box once the home component is initialized.
+    > ngAfterViewInit()
+      {
+            console.log(this.box);
+            //set the back ground color 
+            this.box.nativeElement.style.backgroundColor="orange";
+            //apply custom css class
+            this.box.nativeElement.classList="boxOrange";
+            //update the html content 
+            this.box.nativeElement.innerHTML="This is modified html";
+      }
+
+2. Home is a parent component and comp1 is a child component.
+3. child component has one property userName and method clickMe to show alert.
+4. We are accessing comp1 component in Home component, so we can update the userName preperty from home and we can trigger 
+   the clickMe method from home.

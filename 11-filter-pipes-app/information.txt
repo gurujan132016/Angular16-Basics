@@ -1,0 +1,9 @@
+> PIPES  
+    > PIPE is featue and it provides facility to tranform the output data into another form.
+    > For Example: Tranform output from lowercase to uppercase, uppercase to lowecase etc.
+    > Check the angular Documentation for different pipes:  https://angular.io./api?query=pipe
+
+> Custom Filter PIPES
+    > We can develop our own pipe with custom logic for tranformation and filter.
+    > For Example: 
+        1. For Example: We have a list with Id, ProductName, Price column and we need to filter record based on product name then we can create custom pipe to filter the record.

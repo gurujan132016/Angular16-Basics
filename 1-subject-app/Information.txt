@@ -1,0 +1,50 @@
+
+1. How to use  bootstrap.
+    a. ngx-bootstrap
+        > It is designed wuth the help of angular native directory without jquery. 
+        > It is fully compatible with angular.
+        > npm install ngx-bootstrap --save 
+        > ng add ngx-bootstrap
+        > Documentation: https://valor-software.com/ngx-bootstrap/#/documentation#getting-started
+
+    b. normal bootstrap
+        > npm install -save bootstrap 
+        > It should create entry in angular.json inside styles array.
+            > example: "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+    c. We can also use bootstrap without installing any package. We just need import required bootstrap links in index.html file.
+
+2. What is Subject and BehaviorSubject
+    a. Subject and BehaviorSubject is used for cross component communication.
+    b. Subject
+        > We can not set initial value using Subject.
+    c. BehaviorSubject
+        > We can set initial value using BehaviorSubject.
+
+3. Application Structure 
+    -app
+        -appServices 
+            designutility.service.ts
+        -component1
+            component1.component.css
+            component1.component.html
+            component1.component.ts
+        -component2
+            component2.component.css
+            component2.component.html
+            component2.component.ts
+        -component3
+            component3.component.css
+            component3.component.html
+            component3.component.ts
+        -component4
+            component4.component.css
+            component4.component.html
+            component4.component.ts
+
+4. We have 4 different component. 
+    > All these components are used in app component. 
+    > All the components are similar. It has username, textbox and button. username value will be updated based on text box when user hit the button. 
+    > This updated username value will be reflected in all the component.  
+    > We can achieve this type of functionality Subject and BehaviorSubject.
+

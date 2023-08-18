@@ -1,0 +1,8 @@
+<div class="form-group">
+    <label for="username">User Name (Parent Component)</label>
+    <input type="text" class="form-control" #uname>
+    <br>
+    <button type="button" class="btn btn-primary form-control" (click)="sendUserNameToChildComponent(uname)">Send</button>
+</div>
+
+<app-child [selectedUserName]="selectUserName"></app-child>

@@ -1,0 +1,66 @@
+
+<div class="jumbotron text-center">
+    <h2>PIPES</h2>
+    <h6>PIPE is featue and it provides facility to tranform the output data into another form.</h6>
+    <h6>For Example: Tranform output from lowercase to uppercase, uppercase to lowecase etc.  </h6>
+    <h6>Check the angular Documentation for different pipes:  https://angular.io./api?query=pipe</h6>
+  
+  </div>
+  
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card" style="width:400px" appTestdirective>
+            <div class="card-body">
+              <h4 class="card-title">Uppercase</h4>
+              <p class="card-text">{{value|uppercase}} </p>
+            </div>
+         </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width:400px" appTestdirective>
+            <div class="card-body">
+                <h4 class="card-title">TitleCase</h4>
+                <p class="card-text">{{value|titlecase}} </p>
+            </div>
+         </div>
+      </div>
+  </div>
+   <div class="row">
+      <div class="col-sm-6">
+        <div class="card" style="width:400px" appTestdirective>
+            <div class="card-body">
+              <h4 class="card-title">Date</h4>
+              <p class="card-text">{{date | date}} </p>
+            </div>
+         </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width:400px" appTestdirective>
+            <div class="card-body">
+                <h4 class="card-title">Short Date</h4>
+                <p class="card-text">{{date|date:'short'}} </p>
+            </div>
+         </div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card" style="width:400px" appTestdirective>
+          <div class="card-body">
+            <h4 class="card-title">Date Medium</h4>
+            <p class="card-text">{{date | date:'medium'}} </p>
+          </div>
+       </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card" style="width:400px" appTestdirective>
+          <div class="card-body">
+              <h4 class="card-title">Date Short Time</h4>
+              <p class="card-text">{{date|date:'shortTime'}} </p>
+          </div>
+       </div>
+    </div>
+</div>
+  </div>

@@ -1,0 +1,43 @@
+1. renderer 
+    a. Renderer is a inbuilt class of angular. We can modify content of dom element with the help of renderer.
+    b. Renderer provides safe way to access the dom element.
+    c. One div has been delared with #box in home component.
+    d. <div #box>
+            <h1> User Name is {{userFullName}} </h1>
+       </div>
+    e. Declare view child to access the box element: @ViewChild('box', { static: true }) box!: ElementRef;
+    f. Inject renderer: constructor(private renderer: Renderer2){}
+    g. the box element with the help of renderer.
+        i.   ngAfterViewInit()
+             {
+                this.renderer.setStyle(this.box.nativeElement,'backgroundColor','red')
+                this.renderer.setStyle(this.box.nativeElement,'color','white')
+                this.renderer.addClass(this.box.nativeElement,'myClass')
+                this.renderer.setAttribute(this.box.nativeElement,'title','this is test title')
+             }
+2. ContentChild
+    a. If we are projecting some information from parent component to child component, then we can access this dom element with the help of ContentChild.
+    b. Add below code in home component.
+        i.  <app-comp1>
+                <p #childCon> This is ng content paragraph</p>
+            </app-comp1>
+        ii.  home is a parent component and comp1 is a child component. 
+        iii. Here we are passing some addition information in child component with #childCo. 
+        iv. With the help of ContentChild we can access/update this dom element in child component.
+    c. Add code <ng-content></ng-content> in child component html to display the html (This is ng content paragraph) which is passing from parent.
+    d. Declare ContentChild in child component.
+        i. @ContentChild('childCon', { static: true }) childParagraph!:ElementRef
+    e. Modify the dom element content.
+        i. ngAfterContentInit() 
+           {
+                console.log(this.childParagraph);
+                this.renderer.setStyle(this.childParagraph.nativeElement,'color','red');
+           }
+    f. Modify content on button click event.
+        i.  clickMe(){
+            
+                alert(this.userName);
+                var text=this.renderer.createText('this text is created by renderer');
+                this.renderer.appendChild(this.childParagraph.nativeElement,text);
+            }
+    

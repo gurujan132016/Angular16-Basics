@@ -1,0 +1,21 @@
+1. How to use  bootstrap.
+    a. ngx-bootstrap
+        > It is designed wuth the help of angular native directory without jquery. 
+        > It is fully compatible with angular.
+        > npm install ngx-bootstrap --save 
+        > ng add ngx-bootstrap
+        > Documentation: https://valor-software.com/ngx-bootstrap/#/documentation#getting-started
+
+2. Feature Module 
+    a. The feature module helps to split our application into different modules. It helps to clean the app.module.ts file.
+        i. For example: We have a product feature in angular application.
+        ii. Instead of adding all the information in app.module.ts file, we can create a feature-specific module and then import a new module into app.module.ts.
+        iii. Create a product module - products.module.ts (21-feature-module-app\src\app\product\products.module) and use this module to import product related information.
+        iv. Import products.module into the app.module.ts file to make the system aware that products.module is a part of app.module.
+
+3. Shared Module 
+    a. Shared module helps to import common component/directives/pipe etc information into the different feature module.
+        i. For example: We have a product feature and services feature in angular application.
+        ii. Product and services both feature are using common back button for the back navigation. We can add back button component in shared module to share with product and services feature.
+        iii. Create a common module: design-utility.module.ts (21-feature-module-app\src\app\appModules\design-utility.module.ts)
+        iv. Import design-utility.module into the products.module and services.module to make the system aware that design-utility.module is a part of product and services feature.

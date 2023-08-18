@@ -1,0 +1,17 @@
+1. ng-content
+    > We can reuse the component with the help of ng-content. 
+    > We can create a common component with common details and we can reuse this component at other places.
+    > If we want to show some items dynamically in common component, then we need to pass some information from parent/calling component.
+    > Common component: Card 
+        > We are using ng-content in card component to show values from the calling component.
+        > If we need to pass multiple information, then we need to use the multiple ng-content in card component.
+        > If we need to show value in particular place, then we need to define classes with ng-content in card component and based on the calling component class it will show the values.
+
+2. ng-container 
+    > ng-container helps to reduce unnecessary div.
+    > For example: 
+        > We are showing some blocks/div based on if condition and we have an if condition for the parent div tag.
+        > We don't want an additional div tag but div tag has if condition, so whenever the condition is true it will wrap the block with another div tag.
+        > With the help of ng-container, we can reduce this additional div tag.
+        > We need to wrap block with <ng-container></ng-container>
+        > If ngIf is true, then it will show the nag-container, otherwise it won't be available.

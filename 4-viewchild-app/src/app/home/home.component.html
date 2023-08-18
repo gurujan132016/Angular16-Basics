@@ -1,0 +1,27 @@
+<div class="jumbotron text-center">
+        <h2>@ViewChild: We can manipulate content of dom element with the help of view child.</h2>
+        <h6>We can access the child component property and method in parent component with the help of view child.</h6>
+        <h6>We can update the child component property value in parent componet with the help of view child.</h6>
+        <h6>we can trigger child component method from parent component with the help of view child. </h6>
+</div>
+     
+<br>
+<div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+                <div #box>
+                        <h1> User Name is {{userFullName}} </h1>
+                </div>
+          </div>
+          <div class="col-sm-6">
+                <h5>Parent Component</h5>
+                <button (click)="changeChildProperty()" class="btn btn-primary">Change Child Property</button>
+                &nbsp;
+                <button (click)="callChildMethod()" class="btn btn-primary">Call Child Method</button>
+          </div>
+          <div class="col-sm-6">
+                <h5>Child Component</h5>
+                <app-comp1></app-comp1>
+          </div>
+      </div>
+</div>

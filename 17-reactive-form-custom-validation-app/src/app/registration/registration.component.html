@@ -1,0 +1,86 @@
+  
+  <br>
+  <div class="container">   
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>Reactive Form</h2>
+        <h6>Whenever the form is complex we should go with reactive form approach.</h6>
+        <h6>Topics: Form group, simple form validation, form array, custom validation, statusChange(), valueChanges(), setValue(), patchValue()</h6>
+        <h6>Custom validation has been implemented to make username can not be [hitesh] or [Codecirculation].</h6>
+        <h6>Custom Async Validator has been implemented to check email is already exist or not. For example: hitesh@gmail.com email is already taken</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
+            <div formGroupName="userDetail">
+              <div class="form-group">
+                <label for="username">Username*</label>
+                <input type="text" 
+                        class="form-control" 
+                        id="username"  
+                        placeholder="Enter Username"
+                        formControlName="username"
+                >
+                <small class="text-danger"
+                *ngIf="!myReactiveForm.get('userDetail.username')?.valid && myReactiveForm.get('userDetail.username')?.touched">
+                    <span *ngIf="myReactiveForm.get('userDetail.username')?.errors!['required']">Username is not valid </span>
+                    <span *ngIf="myReactiveForm.get('userDetail.username')?.errors!['nameIsNotAllowed']">
+                        {{myReactiveForm.get('userDetail.username')?.value}} Username is not allowed
+                    </span>
+                </small>
+              </div>
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" 
+                       class="form-control" 
+                       id="email" placeholder="Enter Email"
+                       formControlName="email"
+                >
+                <small class="text-danger"
+                *ngIf="!myReactiveForm.get('userDetail.email')?.valid && myReactiveForm.get('userDetail.email')?.touched">Please Enter Valid Email</small>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for ="cource">Select Cource</label>
+              <select class="form-control" id="cource"  formControlName="cource">
+                <option value="Angular">Angular</option>
+                <option value="Html">Html</option>
+                <option value="Javascript">Javascript</option>
+                <option value="DotNet">DotNet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-radio"
+              *ngFor="let gender of genders">
+                <input type="radio" 
+                       id="{{gender.id}}" 
+                       name="gender"
+                       value="{{gender.value}}"
+                       class="custom-control-input"
+                       formControlName="gender">
+                >
+                <label class="custom-control-label" for="{{gender.id}}">{{gender.value}}</label>
+              </div>
+            </div>
+            <div class="form-group" formArrayName="skills">
+                <label for="username">Skills</label>
+                <ng-container *ngFor="let Skill of skillItems.controls; index as i">
+
+                     <input type="text" 
+                        class="form-control mt-2" 
+                        formControlName="{{i}}"
+                        placeholder="Add skills"
+                    >
+
+                </ng-container>
+                <button class="form-control btn btn-primary btn-sm mt-3" (click)="onAddSkills()">+ Add Skills</button>
+              </div>
+            <button type="submit" class="form-control btn btn-success">Submit</button>
+          </form>
+      </div>
+    </div>
+  </div>
+  
+   
+  

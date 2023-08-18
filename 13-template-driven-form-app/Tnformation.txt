@@ -1,0 +1,14 @@
+> Template Driven Form 
+    > Whenever the form is very simple and it is not very complex then we should go with template driven form..
+    > Simple Basic Form.
+    > Easy to Start.
+    > Based on Template (HTML).
+    > Whenever we use form we have to import FormsModule in app.module.ts
+
+> Set Value
+    > We can set the form values using setValue() method.
+    > When we use setValue() we have to specify all the form properties. For Example: UserName, Email, FirstName, LastName 
+    > For example we are trying to update only username value using update button, but setValue() will update all remaining properties, because all the properties are defined in setValue() method with default values. 
+
+> Patch Value
+    > We can update any specific form property using patchValue() method. 

@@ -1,0 +1,17 @@
+.parent{
+
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    
+    column-gap: 25px;
+    
+    }
+
+    .child{
+
+        height: 250px;
+        
+        /* background: rgb(253, 5, 109); */
+        
+        }

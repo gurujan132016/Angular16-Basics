@@ -1,0 +1,5 @@
+> Fetch data using http and observables
+    > Display user list using fake online API.
+    > jsonplaceholder users api has been used (https://jsonplaceholder.typicode.com/users).
+    > Service: design-utility.service.ts
+        

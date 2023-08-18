@@ -1,0 +1,10 @@
+> PIPES  
+    > PIPE is featue and it provides facility to tranform the output data into another form.
+    > For Example: Tranform output from lowercase to uppercase, uppercase to lowecase etc.
+    > Check the angular Documentation for different pipes:  https://angular.io./api?query=pipe
+
+> Custom PIPES
+    > We can develop our own pipe with custom logic for tranformation.
+    > For Example: 
+        1. keep only first 5 character from string and remove remaning character from string.
+        2. Remove all the space and special characters from string. 

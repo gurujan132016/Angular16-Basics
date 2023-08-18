@@ -1,0 +1,26 @@
+1. We can create custome directive and we can use that directive with view child.
+2. Custom directive acts as a services. We need to put all the code in custom directive to manipulate the dom element.
+3. Create directive using this command.
+    a. ng g d testdirective
+    b. testdirective has been created in appDirective folder.
+    d. Import ElementRef and Renderer2 and manipulate the dom element in constructor.
+       constructor(private el:ElementRef, private renderer:Renderer2) 
+       {
+          this.renderer.setStyle(this.el.nativeElement,'backgroundColor','yellow')
+       }
+    e. Apply directive class selector [appTestdirective] comp1 html file with div tag. It will change the color of div background as per the code.
+    f. Create method for color change.
+       changeBg(color:string)
+       {
+        this.renderer.setStyle(this.el.nativeElement,'backgroundColor',color)
+       }
+4. Import directive in comp1 type script file.
+    a. @ViewChild(TestdirectiveDirective) myDir!:TestdirectiveDirective
+    b. Create one method in comp1.ts file. we will call the directives method from this method.
+        changeColor(color:string){
+            this.myDir.changeBg(color);
+        }
+    c. comp1.html file has 2 buttons orange and green to change the back ground color. These two buttons are calling this changeColor method.
+
+
+

@@ -1,0 +1,18 @@
+1. How to use bootsrtap icons.
+    I. Install Bootstrap Icons:
+    > First, you need to install the Bootstrap Icons package. You can use npm or yarn for this. Open your terminal and navigate to your Angular project directory, then run:
+    > npm install bootstrap-icons
+
+    II. Import the Icons:
+    > In your Angular project, you'll need to import the Bootstrap Icons CSS into your stylesheets. Open the styles.scss (or styles.css) file in your project and add the following line to import the Bootstrap Icons:
+    > @import '~bootstrap-icons/font/bootstrap-icons.css';
+
+    III. Use Icons in Components:
+    > Now you can use Bootstrap Icons in your Angular components. You can use them in your HTML templates as regular HTML tags with the bi class:
+    > <i class="bi bi-heart"></i>
+
+2. Create/Read/Update/Delete/Search using array. 
+    > Currently we don't have any database, so the array list has been used to add/update/delete.
+    > Angular Subject has been used for array list. When we add/update/delete anything in array list, it will reflect updated array list for all the components, because we have used angular subject.
+
+

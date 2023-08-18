@@ -1,0 +1,10 @@
+<div appTestdirective>
+    User Name: <strong>{{userName}}</strong>
+    <br>
+    <button (click)="clickMe()" class="btn btn-primary">Click Me</button> &nbsp;
+    <button (click)="changeColor('Orange')" class="btn btn-primary">Orange</button> &nbsp;
+    <button (click)="changeColor('Green')" class="btn btn-primary">Green</button> &nbsp;
+
+    <ng-content></ng-content>
+</div>
+<br>

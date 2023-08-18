@@ -1,0 +1,7 @@
+Pass information from parent component to child component using @Input decorator 
+
+1. Create parent and child component.
+    a. src/child
+    b. src/parent
+2. Implement textbox and button in parent component. We are sending textox information from parent component to child component.
+3. Declare property with @Input decorator which we are sending from parent to child.

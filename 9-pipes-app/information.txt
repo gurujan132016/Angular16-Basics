@@ -1,0 +1,4 @@
+> PIPES  
+    > PIPE is featue and it provides facility to tranform the output data into another form.
+    > For Example: Tranform output from lowercase to uppercase, uppercase to lowecase etc.
+    > Check the angular Documentation for different pipes:  https://angular.io./api?query=pipe

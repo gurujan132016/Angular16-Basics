@@ -1,0 +1,12 @@
+> Hostbinding
+    > We can use hostbinding in our host element to bind bind any property and attribute.
+    > If we use hostbinding then we don't need to use renderer to access the element.
+    > If we are not using hostbinding then we need to use renderer to access the element with hostlistener.
+
+1. Create directive (ng g d testdirective) to add hostlistener (click/mouseover/mouseout) code.
+    a. app/appDirectives/testdirective.directive.ts
+
+2. Create home component and add two div. 
+    a. Add diretive selector: [appTestdirective] on both div tags (home component) to trigger the events.
+
+3. Here we are using Hostbinding to access the element instead of renderer.

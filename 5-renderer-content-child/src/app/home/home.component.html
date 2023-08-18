@@ -1,0 +1,25 @@
+<div class="jumbotron text-center">
+    <h2>Renderer & ContentChild</h2>
+    <h6>Renderer:  Renderer is a inbuilt class of angular. We can modify content of dom element with the help of renderer. Renderer provides safe way to access the dom element</h6>
+    <h6>ContentChild: If we are projecting some information from parent component to child component, then we can access this dom element with the help of ContentChild. With the help of ContentChild we can access/update this dom element in child component.</h6>
+</div>
+ 
+<br>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+            <div #box>
+                    <h1> User Name is {{userFullName}} </h1>
+            </div>
+      </div>
+      <div class="col-sm-6">
+            <h5>Parent Component</h5>
+      </div>
+      <div class="col-sm-6">
+            <h5>Child Component</h5>
+            <app-comp1>
+                <p #childCon> This is ng content paragraph</p>
+            </app-comp1>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+
+<div class="jumbotron text-center">
+    <h2>CUSTOM FILTER PIPES</h2>
+    <h6>PIPE is featue and it provides facility to tranform the output data into another form.</h6>
+    <h6>We can develope our own pipe with custom logic for tranformation and filter.</h6>
+    <h6>For Example: We have a list with Id, ProductName, Price column and we need to filter record based on product name then we can create custom pipe to filter the record.</h6>
+  </div>
+  
+  <br>
+  <div class="container">   
+    <input type="text" class="form-control" id="search" placeholder="Search Product by Name" [(ngModel)]="nameSearch">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Availibility</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of productArr | filter:nameSearch">
+          <td>{{product.sno}}</td>
+          <td>{{product.name}}</td>
+          <td>{{product.price}}</td>
+          <td>{{product.availibility}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+   

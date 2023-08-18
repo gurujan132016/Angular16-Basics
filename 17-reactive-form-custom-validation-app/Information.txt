@@ -1,0 +1,52 @@
+> Reactive Form
+    > Whenever the form is complex we should go with reactive form approach.
+    > opics: Form group, simple form validation, form array, custom validation
+
+> Custom Validation
+    > Custom validation has been implemented to make username can not be [hitesh] or [Codecirculation]. 
+
+> Custom Async Validator   
+    > Whnever we need to make validation based on server response at that time we need to use custom async validator.
+    > For example: Email is already exist.
+        > This type of functionality works with database and api calls and whenever user enter email it makes api call to check email is exist or not. It takes little time to get api response and display validation message.
+        > Currently we don't have any api so we are using setTimeOut() method to handle the reponse time.
+        > Custom Async Validator Function: checkEmailAvailability() > checNaEmails().
+
+> statusChange()
+    > Whenever we changes anything in form it will trigger statusChange().
+    > For example: We have a form with multiple textbox and control, if we changes any control/textbox value then statusChange() will trigger.
+    >   this.myReactiveForm.valueChanges.subscribe(
+            (value)=> console.log(value)
+        )
+> valueChanges()
+    > When all the form validation are meet for all the controls and we change anything in any control/textbox value then valueChanges() will trigger.
+    >    this.myReactiveForm.statusChanges.subscribe(
+            (status)=>{
+            console.log(status)
+            }
+        )
+    > It returns status Valid or InValid. We can handle the code based on this status.
+
+> setValue()
+    > When we use setValue(), we have to define all the form properties with values.
+    >  this.myReactiveForm.setValue({
+          'userDetail':{
+            'username':'john',
+            'email':'john@gmail.com'
+          },
+          'cource':'Angulart',
+          'gender':'Male',
+          'skills':['React']
+        })
+
+> patchValue()
+    > When we use patchValue(), we don't need to define all the properties. We can define properties as per our need.
+    > this.myReactiveForm.patchValue({
+        'userDetail':{
+          'username':'john'
+        }
+      })
+
+
+
+

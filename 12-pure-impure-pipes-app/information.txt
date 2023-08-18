@@ -1,0 +1,15 @@
+> PIPES  
+    > PIPE is featue and it provides facility to tranform the output data into another form.
+    > For Example: Tranform output from lowercase to uppercase, uppercase to lowecase etc.
+    > Check the angular Documentation for different pipes:  https://angular.io./api?query=pipe
+
+> Custom Filter PIPES
+    > We can develop our own pipe with custom logic for tranformation and filter.
+    > For Example: 
+        1. For Example: We have a list with Id, ProductName, Price column and we need to filter record based on product name then we can create custom pipe to filter the record.
+
+> PURE PIPES
+    > PURE PIPE executes whenever any pure change detects in pipe input value. It's purely focused on when pipe value and paremeter is updated.
+
+> IMPURE PIPES
+    > IMPURE PIPE executes whenever any change detects in angular application. Either pipe value and parameter or any change detects in the component. Whenever we use Impure Pipes, there are high chances of performance issue, because it executes whenever angular detect any changes.

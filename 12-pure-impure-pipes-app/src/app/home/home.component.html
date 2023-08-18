@@ -1,0 +1,47 @@
+
+<div class="jumbotron text-center">
+  <h2>PURE PIPES & IMPURE PIPES</h2>
+  <h6>PURE PIPE executes whenever any pure change detects in pipe input value. It's purely focused on when pipe value and paremeter is updated. </h6>
+  <h6>IMPURE PIPE executes whenever any change detects in angular application. Either pipe value and parameter or any change detects in the component. Whenever we use Impure Pipes, there are high chances of performance issue, because it executes whenever angular detect any changes.</h6>
+</div>
+
+<br>
+<div class="container">   
+  <div class="row">
+    <div class="col-sm-4">  
+      <input type="text" class="form-control" placeholder="Add New Product" #add>
+    </div>
+    <div class="col-sm-4">  
+      <button class="btn btn-success" (click)="onAddProduct(add)">Add Product</button>
+    </div>
+    <div class="col-sm-4"> 
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-12">  
+      <input type="text" class="form-control" id="search" placeholder="Search Product by Name" [(ngModel)]="nameSearch">
+    </div>
+  </div>
+  <br>
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Availibility</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of productArr | filter:nameSearch">
+        <td>{{product.sno}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.availibility}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+ 
