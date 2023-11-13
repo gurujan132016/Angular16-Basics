@@ -24,3 +24,4 @@
 23-pre-loading <br>
 24-custom-pre-loading <br>
 25-crud-operation-using-aaray <br>
+26-crud-operation-using-asp.net-core-api-(.NET-7.0)
