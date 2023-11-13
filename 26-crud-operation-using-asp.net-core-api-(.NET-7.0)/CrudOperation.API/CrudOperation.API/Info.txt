@@ -1,0 +1,34 @@
+1. Entity Framework (Install Packages)
+	a. Microsoft.entityFrameworkCore.SqlServer
+	b. Microsoft.entityFrameworkCore.Tools
+
+2. Run Migration (Command to run database migration)
+	a. Add-Migration "Initial"
+	b. Update-Database
+
+3. Auto Mapper (Install Packages)
+	a. AutoMapper
+	b. AutoMapper.Extensions.Microsoft.DependencyInjection
+
+4. Serilog (Install Packages)
+	a. Serilog
+	b. Serilog.AspNetCore 
+	c. Serilog.Sinks.Console (For Console Log)
+	d. Serilog.sinks.File (For File Log)
+
+5.Login & Registration using identity (Install Packages)
+	a. Microsoft.AspNetCore.Authentication.JwtBearer 
+	b. Microsoft.IdentityModel.Tokens
+	c. System.IdentityModel.Tokens.Jwt 
+	d. Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
+6. Users  
+	a. Reader 
+		i. Username: reader102@example.com
+		ii. Password: Admin@123
+		iii. This user can access only GetALL and GetByID (API:Department)
+	b. Writer 
+		i. Username: writer102@example.com
+		ii. Password: Admin@123
+		iii. This user can access only Create, Update and Delete (API:Department)
+

@@ -1,0 +1,964 @@
+2023-09-07 12:40:28.768 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 12:40:28.799 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 12:40:28.802 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 12:40:28.803 +05:30 [INF] Hosting environment: Development
+2023-09-07 12:40:28.803 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 12:40:29.660 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 12:40:29.851 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 193.8085ms
+2023-09-07 12:40:29.860 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 12:40:29.860 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 12:40:29.874 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 13.2934ms
+2023-09-07 12:40:29.880 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.8164ms
+2023-09-07 12:40:29.920 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 12:40:29.999 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 79.2194ms
+2023-09-07 12:40:35.351 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Employee/GetAll - -
+2023-09-07 12:40:45.446 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API)'
+2023-09-07 12:40:45.460 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 12:40:49.125 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API) in 3660.0773ms
+2023-09-07 12:40:49.128 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API)'
+2023-09-07 12:41:08.521 +05:30 [ERR] 71c96760-e4f7-4079-9c9b-ae4323b2cfb4:This is custom exception
+System.Exception: This is custom exception
+   at CrudOperation.API.Controllers.EmployeeController.GetAll() in D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API\Controllers\EmployeeController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CrudOperation.API.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API\Middlewares\ExceptionHandlerMiddleware.cs:line 20
+2023-09-07 12:41:13.177 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Employee/GetAll - - - 500 - application/json;+charset=utf-8 37825.5536ms
+2023-09-07 12:41:37.827 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Employee/GetAll - -
+2023-09-07 12:41:37.837 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API)'
+2023-09-07 12:41:37.838 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 12:41:39.052 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API) in 1212.507ms
+2023-09-07 12:41:39.052 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API)'
+2023-09-07 12:41:39.064 +05:30 [ERR] 19ae2068-28c3-4f26-9a40-7116d49efd71:This is custom exception
+System.Exception: This is custom exception
+   at CrudOperation.API.Controllers.EmployeeController.GetAll() in D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API\Controllers\EmployeeController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CrudOperation.API.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API\Middlewares\ExceptionHandlerMiddleware.cs:line 20
+2023-09-07 12:41:39.069 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Employee/GetAll - - - 500 - application/json;+charset=utf-8 1241.9655ms
+2023-09-07 13:51:01.433 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 13:51:01.459 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 13:51:01.462 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 13:51:01.462 +05:30 [INF] Hosting environment: Development
+2023-09-07 13:51:01.462 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 13:51:01.986 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 13:51:02.438 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 455.0422ms
+2023-09-07 13:51:02.444 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 13:51:02.444 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 13:51:02.457 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 13.7613ms
+2023-09-07 13:51:02.463 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.2338ms
+2023-09-07 13:51:02.502 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 13:51:02.573 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 71.6174ms
+2023-09-07 13:51:07.519 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Employee/GetAll - -
+2023-09-07 13:51:07.526 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API)'
+2023-09-07 13:51:07.543 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 13:51:09.880 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API) in 2333.9235ms
+2023-09-07 13:51:09.883 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API)'
+2023-09-07 13:51:09.894 +05:30 [ERR] 0044066d-9268-4103-9417-df890f2096b3:Attempted to divide by zero.
+System.DivideByZeroException: Attempted to divide by zero.
+   at CrudOperation.API.Controllers.EmployeeController.GetAll() in D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API\Controllers\EmployeeController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CrudOperation.API.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API\Middlewares\ExceptionHandlerMiddleware.cs:line 20
+2023-09-07 13:51:09.928 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Employee/GetAll - - - 500 - application/json;+charset=utf-8 2408.6745ms
+2023-09-07 14:03:31.208 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 14:03:31.234 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 14:03:31.236 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 14:03:31.237 +05:30 [INF] Hosting environment: Development
+2023-09-07 14:03:31.237 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 14:03:31.900 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 14:03:32.084 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 14:03:32.084 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 14:03:32.084 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 184.8922ms
+2023-09-07 14:03:32.102 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 17.6234ms
+2023-09-07 14:03:32.111 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.3036ms
+2023-09-07 14:03:32.148 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 14:03:32.215 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 67.6386ms
+2023-09-07 14:04:24.601 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 273
+2023-09-07 14:04:24.614 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:04:24.629 +05:30 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 14:04:35.995 +05:30 [INF] Executed DbCommand (76ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 10), @p9='?' (DbType = Int64), @p10='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [City], [Company], [Country], [Email], [FirstName], [LastName], [Middlename], [Mobile], [Salary], [State])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2023-09-07 14:05:15.340 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 14:05:15.353 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API) in 50719.4523ms
+2023-09-07 14:05:15.359 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:05:15.364 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 273 - 200 - application/json;+charset=utf-8 50764.0142ms
+2023-09-07 14:07:41.166 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 14:07:41.190 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 14:07:41.193 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 14:07:41.194 +05:30 [INF] Hosting environment: Development
+2023-09-07 14:07:41.195 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 14:07:41.784 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 14:07:41.945 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 161.2449ms
+2023-09-07 14:07:41.949 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 14:07:41.949 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 14:07:41.977 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 27.4327ms
+2023-09-07 14:07:41.982 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.1814ms
+2023-09-07 14:07:42.016 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 14:07:42.084 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 67.8477ms
+2023-09-07 14:08:06.448 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 273
+2023-09-07 14:08:06.461 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:08:06.478 +05:30 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 14:08:09.875 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 10), @p9='?' (DbType = Int64), @p10='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [City], [Company], [Country], [Email], [FirstName], [LastName], [Middlename], [Mobile], [Salary], [State])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2023-09-07 14:08:09.899 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 14:08:09.914 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API) in 3432.7115ms
+2023-09-07 14:08:09.916 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:08:09.921 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 273 - 200 - application/json;+charset=utf-8 3473.3620ms
+2023-09-07 14:10:06.474 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 14:10:06.500 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 14:10:06.503 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 14:10:06.504 +05:30 [INF] Hosting environment: Development
+2023-09-07 14:10:06.505 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 14:10:07.220 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 14:10:07.402 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 14:10:07.402 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 14:10:07.408 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 189.9221ms
+2023-09-07 14:10:07.426 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 22.9983ms
+2023-09-07 14:10:07.434 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.0597ms
+2023-09-07 14:10:07.478 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 14:10:07.544 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 65.1987ms
+2023-09-07 14:10:33.966 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7114/api/Employee/Update/A25FA68B-9F8C-45DC-9056-E76461AB213E application/json 268
+2023-09-07 14:10:33.979 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API)'
+2023-09-07 14:10:33.995 +05:30 [INF] Route matched with {action = "Update", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 14:10:39.948 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 14:10:40.045 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p3='?' (DbType = Guid), @p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Employees] SET [FirstName] = @p0, [Middlename] = @p1, [Salary] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2023-09-07 14:10:42.570 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 14:10:42.583 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API) in 8583.877ms
+2023-09-07 14:10:42.586 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API)'
+2023-09-07 14:10:42.592 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7114/api/Employee/Update/A25FA68B-9F8C-45DC-9056-E76461AB213E application/json 268 - 200 - application/json;+charset=utf-8 8625.7516ms
+2023-09-07 14:12:02.250 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7114/api/Employee/Update/A25FA68B-9F8C-45DC-9056-E76461AB213E application/json 268
+2023-09-07 14:12:02.257 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API)'
+2023-09-07 14:12:02.257 +05:30 [INF] Route matched with {action = "Update", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 14:12:06.632 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 14:12:37.291 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 14:12:37.292 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API) in 35033.7649ms
+2023-09-07 14:12:37.293 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API)'
+2023-09-07 14:12:37.294 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7114/api/Employee/Update/A25FA68B-9F8C-45DC-9056-E76461AB213E application/json 268 - 200 - application/json;+charset=utf-8 35044.1854ms
+2023-09-07 14:14:20.846 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 14:14:20.876 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 14:14:20.879 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 14:14:20.880 +05:30 [INF] Hosting environment: Development
+2023-09-07 14:14:20.881 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 14:14:21.205 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 14:14:21.398 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 14:14:21.398 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 14:14:21.419 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 19.8511ms
+2023-09-07 14:14:21.419 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 215.2284ms
+2023-09-07 14:14:21.427 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.4064ms
+2023-09-07 14:14:21.466 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 14:14:21.549 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 82.9644ms
+2023-09-07 14:14:46.098 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 273
+2023-09-07 14:14:46.107 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:14:46.125 +05:30 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 14:14:49.318 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 10), @p9='?' (DbType = Int64), @p10='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [City], [Company], [Country], [Email], [FirstName], [LastName], [Middlename], [Mobile], [Salary], [State])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2023-09-07 14:15:14.749 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 14:15:14.762 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API) in 28634.4511ms
+2023-09-07 14:15:14.764 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:15:14.774 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 273 - 200 - application/json;+charset=utf-8 28676.0101ms
+2023-09-07 14:20:34.589 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 14:20:34.617 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 14:20:34.620 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 14:20:34.621 +05:30 [INF] Hosting environment: Development
+2023-09-07 14:20:34.622 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 14:20:35.091 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 14:20:35.298 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 209.3610ms
+2023-09-07 14:20:35.305 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 14:20:35.305 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 14:20:35.325 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 19.3901ms
+2023-09-07 14:20:35.330 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.8232ms
+2023-09-07 14:20:35.364 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 14:20:35.441 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 76.2127ms
+2023-09-07 14:23:16.012 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 14:23:16.035 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 14:23:16.038 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 14:23:16.040 +05:30 [INF] Hosting environment: Development
+2023-09-07 14:23:16.041 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 14:23:16.998 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 14:23:17.238 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 241.4034ms
+2023-09-07 14:23:17.240 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 14:23:17.240 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 14:23:17.259 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 18.6883ms
+2023-09-07 14:23:17.267 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.4068ms
+2023-09-07 14:23:17.316 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 14:23:17.392 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 75.9262ms
+2023-09-07 14:23:57.000 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 273
+2023-09-07 14:23:57.011 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:23:57.027 +05:30 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 14:24:00.300 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 10), @p9='?' (DbType = Int64), @p10='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [City], [Company], [Country], [Email], [FirstName], [LastName], [Middlename], [Mobile], [Salary], [State])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2023-09-07 14:24:11.519 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 14:24:11.530 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API) in 14498.7062ms
+2023-09-07 14:24:11.532 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:24:11.538 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 273 - 200 - application/json;+charset=utf-8 14537.5126ms
+2023-09-07 14:29:50.067 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 14:29:50.088 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 14:29:50.090 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 14:29:50.090 +05:30 [INF] Hosting environment: Development
+2023-09-07 14:29:50.090 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 14:29:50.786 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 14:29:51.014 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 14:29:51.014 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 14:29:51.017 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 231.8113ms
+2023-09-07 14:29:51.029 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 15.2198ms
+2023-09-07 14:29:51.035 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.1947ms
+2023-09-07 14:29:51.082 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 14:29:51.164 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 81.8560ms
+2023-09-07 14:30:29.816 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 273
+2023-09-07 14:30:29.826 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:30:29.841 +05:30 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 14:30:32.438 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 10), @p9='?' (DbType = Int64), @p10='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [City], [Company], [Country], [Email], [FirstName], [LastName], [Middlename], [Mobile], [Salary], [State])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2023-09-07 14:30:32.465 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 14:30:32.479 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API) in 2634.144ms
+2023-09-07 14:30:32.481 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:30:32.487 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 273 - 200 - application/json;+charset=utf-8 2671.5535ms
+2023-09-07 14:31:12.111 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 14:31:12.138 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 14:31:12.141 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 14:31:12.142 +05:30 [INF] Hosting environment: Development
+2023-09-07 14:31:12.144 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 14:31:12.468 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 14:31:12.685 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 14:31:12.685 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 14:31:12.711 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 231.3762ms
+2023-09-07 14:31:12.711 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 26.3726ms
+2023-09-07 14:31:12.721 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.3572ms
+2023-09-07 14:31:12.755 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 14:31:12.834 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 79.3565ms
+2023-09-07 14:31:33.014 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 272
+2023-09-07 14:31:33.028 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:31:33.045 +05:30 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 14:31:35.245 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 10), @p9='?' (DbType = Int64), @p10='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [City], [Company], [Country], [Email], [FirstName], [LastName], [Middlename], [Mobile], [Salary], [State])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2023-09-07 14:31:35.267 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 14:31:35.278 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API) in 2229.6763ms
+2023-09-07 14:31:35.280 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:31:35.288 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 272 - 200 - application/json;+charset=utf-8 2273.9389ms
+2023-09-07 14:32:38.180 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 272
+2023-09-07 14:32:38.214 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:32:38.215 +05:30 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 14:32:40.730 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 10), @p9='?' (DbType = Int64), @p10='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [City], [Company], [Country], [Email], [FirstName], [LastName], [Middlename], [Mobile], [Salary], [State])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2023-09-07 14:33:06.379 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 14:33:06.381 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API) in 28165.097ms
+2023-09-07 14:33:06.385 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:33:06.385 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 272 - 200 - application/json;+charset=utf-8 28205.6925ms
+2023-09-07 14:33:45.110 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 272
+2023-09-07 14:33:49.301 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:33:49.302 +05:30 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 14:33:51.277 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 10), @p9='?' (DbType = Int64), @p10='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [City], [Company], [Country], [Email], [FirstName], [LastName], [Middlename], [Mobile], [Salary], [State])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2023-09-07 14:33:51.279 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 14:33:51.280 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API) in 1976.0685ms
+2023-09-07 14:33:51.281 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:33:51.281 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 272 - 200 - application/json;+charset=utf-8 6171.2677ms
+2023-09-07 14:35:39.332 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 14:35:39.352 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 14:35:39.353 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 14:35:39.355 +05:30 [INF] Hosting environment: Development
+2023-09-07 14:35:39.355 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 14:35:39.826 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 14:35:40.024 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 14:35:40.024 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 14:35:40.024 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 198.3533ms
+2023-09-07 14:35:40.032 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 8.5191ms
+2023-09-07 14:35:40.040 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.1090ms
+2023-09-07 14:35:40.082 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 14:35:40.158 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 76.1341ms
+2023-09-07 14:36:02.161 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 268
+2023-09-07 14:36:14.356 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:36:14.370 +05:30 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 14:36:16.483 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 10), @p9='?' (DbType = Int64), @p10='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [City], [Company], [Country], [Email], [FirstName], [LastName], [Middlename], [Mobile], [Salary], [State])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2023-09-07 14:36:24.687 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 14:36:24.700 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API) in 10326.2799ms
+2023-09-07 14:36:24.703 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 14:36:24.710 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 268 - 200 - application/json;+charset=utf-8 22548.6941ms
+2023-09-07 15:18:08.248 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 15:18:08.273 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 15:18:08.306 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 15:18:08.307 +05:30 [INF] Hosting environment: Development
+2023-09-07 15:18:08.308 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 15:18:08.597 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 15:18:08.760 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 163.5231ms
+2023-09-07 15:18:08.764 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 15:18:08.764 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 15:18:08.774 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 9.9924ms
+2023-09-07 15:18:08.782 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.2921ms
+2023-09-07 15:18:08.827 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 15:18:08.903 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 76.2614ms
+2023-09-07 15:18:33.774 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7114/api/Employee/Update/513F996A-C2E3-4EE3-8B13-BCB72FF3C217 application/json 270
+2023-09-07 15:18:33.783 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API)'
+2023-09-07 15:18:33.798 +05:30 [INF] Route matched with {action = "Update", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 15:18:40.428 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 15:24:16.844 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 15:24:16.865 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 15:24:16.866 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 15:24:16.867 +05:30 [INF] Hosting environment: Development
+2023-09-07 15:24:16.867 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 15:24:17.542 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 15:24:17.706 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 166.1547ms
+2023-09-07 15:24:17.711 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 15:24:17.711 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 15:24:17.727 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 15.9854ms
+2023-09-07 15:24:17.734 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.5271ms
+2023-09-07 15:24:17.781 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 15:24:17.854 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 73.5133ms
+2023-09-07 15:24:39.021 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7114/api/Employee/Update/513F996A-C2E3-4EE3-8B13-BCB72FF3C217 application/json 270
+2023-09-07 15:24:39.031 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API)'
+2023-09-07 15:24:39.047 +05:30 [INF] Route matched with {action = "Update", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 15:24:42.210 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 15:24:50.778 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 15:24:50.795 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API) in 11743.8075ms
+2023-09-07 15:24:50.797 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API)'
+2023-09-07 15:24:50.802 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7114/api/Employee/Update/513F996A-C2E3-4EE3-8B13-BCB72FF3C217 application/json 270 - 200 - application/json;+charset=utf-8 11781.5906ms
+2023-09-07 15:25:23.625 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 273
+2023-09-07 15:25:23.632 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 15:25:23.637 +05:30 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 15:25:27.380 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 10), @p9='?' (DbType = Int64), @p10='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [City], [Company], [Country], [Email], [FirstName], [LastName], [Middlename], [Mobile], [Salary], [State])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2023-09-07 15:25:30.166 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 15:25:30.168 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API) in 6530.2932ms
+2023-09-07 15:25:30.169 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 15:25:30.170 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 273 - 200 - application/json;+charset=utf-8 6545.6320ms
+2023-09-07 15:27:55.373 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 15:27:55.398 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 15:27:55.400 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 15:27:55.401 +05:30 [INF] Hosting environment: Development
+2023-09-07 15:27:55.401 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 15:27:55.913 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 15:27:56.075 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 163.3175ms
+2023-09-07 15:27:56.081 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 15:27:56.081 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 15:27:56.101 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 19.3673ms
+2023-09-07 15:27:56.109 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.5007ms
+2023-09-07 15:27:56.147 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 15:27:56.217 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 70.0127ms
+2023-09-07 15:28:05.807 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7114/api/Employee/Delete/09EB4201-2577-41FB-B5B8-B3B0F9ACB7BD - -
+2023-09-07 15:28:05.814 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API)'
+2023-09-07 15:28:05.830 +05:30 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 15:28:08.925 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 15:28:14.401 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 15:28:14.416 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API) in 8582.6369ms
+2023-09-07 15:28:14.419 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API)'
+2023-09-07 15:28:14.425 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7114/api/Employee/Delete/09EB4201-2577-41FB-B5B8-B3B0F9ACB7BD - - - 200 - application/json;+charset=utf-8 8618.2562ms
+2023-09-07 15:28:31.192 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7114/api/Employee/Delete/DFC203CA-7623-4448-931A-F7848799AC34 - -
+2023-09-07 15:28:31.195 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API)'
+2023-09-07 15:28:31.197 +05:30 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 15:28:32.877 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 15:28:32.978 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Employees]
+OUTPUT 1
+WHERE [Id] = @p0;
+2023-09-07 15:28:37.979 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 15:28:37.980 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API) in 6781.4975ms
+2023-09-07 15:28:37.982 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API)'
+2023-09-07 15:28:37.983 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7114/api/Employee/Delete/DFC203CA-7623-4448-931A-F7848799AC34 - - - 200 - application/json;+charset=utf-8 6790.9043ms
+2023-09-07 16:27:15.351 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 16:27:15.378 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 16:27:15.382 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 16:27:15.385 +05:30 [INF] Hosting environment: Development
+2023-09-07 16:27:15.385 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 16:27:16.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 16:27:16.333 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 230.7767ms
+2023-09-07 16:27:16.334 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 16:27:16.334 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 16:27:16.353 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 19.3878ms
+2023-09-07 16:27:16.361 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.7629ms
+2023-09-07 16:27:16.417 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 16:27:16.520 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 103.2437ms
+2023-09-07 16:27:28.812 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Employee/GetAll - -
+2023-09-07 16:27:28.821 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API)'
+2023-09-07 16:27:28.836 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 16:27:34.009 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+2023-09-07 16:27:34.116 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudOperation.API.Models.DTO.EmployeeDto, CrudOperation.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-07 16:27:34.134 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API) in 5288.5679ms
+2023-09-07 16:27:34.136 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API)'
+2023-09-07 16:27:34.154 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Employee/GetAll - - - 200 - application/json;+charset=utf-8 5342.3357ms
+2023-09-07 16:27:53.098 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Employee/GetById/a25fa68b-9f8c-45dc-9056-e76461ab213e - -
+2023-09-07 16:27:53.107 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.GetById (CrudOperation.API)'
+2023-09-07 16:27:53.120 +05:30 [INF] Route matched with {action = "GetById", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 16:27:56.980 +05:30 [INF] Executed DbCommand (107ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 16:27:59.155 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.EmployeeDto'.
+2023-09-07 16:27:59.159 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.GetById (CrudOperation.API) in 6036.1161ms
+2023-09-07 16:27:59.161 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.GetById (CrudOperation.API)'
+2023-09-07 16:27:59.162 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Employee/GetById/a25fa68b-9f8c-45dc-9056-e76461ab213e - - - 200 - application/json;+charset=utf-8 6064.3780ms
+2023-09-07 16:28:14.452 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Employee/GetById/a25fa68b-9f8c-45dc-9056-e76461ab213f - -
+2023-09-07 16:28:14.460 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.GetById (CrudOperation.API)'
+2023-09-07 16:28:14.463 +05:30 [INF] Route matched with {action = "GetById", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 16:28:17.558 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 16:28:23.155 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 16:28:23.166 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.GetById (CrudOperation.API) in 8698.239ms
+2023-09-07 16:28:23.170 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.GetById (CrudOperation.API)'
+2023-09-07 16:28:23.171 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Employee/GetById/a25fa68b-9f8c-45dc-9056-e76461ab213f - - - 200 - application/json;+charset=utf-8 8718.8040ms
+2023-09-07 16:29:00.836 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 270
+2023-09-07 16:29:00.843 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 16:29:00.848 +05:30 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 16:29:04.008 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 10), @p9='?' (DbType = Int64), @p10='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [City], [Company], [Country], [Email], [FirstName], [LastName], [Middlename], [Mobile], [Salary], [State])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2023-09-07 16:29:04.019 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 16:29:04.020 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API) in 3168.6972ms
+2023-09-07 16:29:04.022 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 16:29:04.022 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 270 - 200 - application/json;+charset=utf-8 3187.5116ms
+2023-09-07 16:29:31.114 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7114/api/Employee/Update/1439AFAD-5A3B-4D81-80DF-B3C7C8789703 application/json 271
+2023-09-07 16:29:31.127 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API)'
+2023-09-07 16:29:31.135 +05:30 [INF] Route matched with {action = "Update", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 16:29:32.446 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 16:29:32.459 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 16:29:32.462 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API) in 1321.7397ms
+2023-09-07 16:29:32.464 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API)'
+2023-09-07 16:29:32.465 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7114/api/Employee/Update/1439AFAD-5A3B-4D81-80DF-B3C7C8789703 application/json 271 - 200 - application/json;+charset=utf-8 1351.3239ms
+2023-09-07 16:30:08.477 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7114/api/Employee/Update/0A4BF6A8-7E07-4FBA-9EE2-DF9CFECA2321 application/json 274
+2023-09-07 16:30:08.483 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API)'
+2023-09-07 16:30:08.494 +05:30 [INF] Route matched with {action = "Update", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 16:30:09.734 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 16:30:09.765 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p4='?' (DbType = Guid), @p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Employees] SET [FirstName] = @p0, [LastName] = @p1, [Middlename] = @p2, [Salary] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2023-09-07 16:30:09.775 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 16:30:09.777 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API) in 1281.532ms
+2023-09-07 16:30:09.779 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API)'
+2023-09-07 16:30:09.781 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7114/api/Employee/Update/0A4BF6A8-7E07-4FBA-9EE2-DF9CFECA2321 application/json 274 - 200 - application/json;+charset=utf-8 1303.8175ms
+2023-09-07 16:30:36.304 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7114/api/Employee/Delete/A25FA68B-9F8C-45DC-9056-E76461AB213F - -
+2023-09-07 16:30:36.317 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API)'
+2023-09-07 16:30:36.322 +05:30 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 16:30:37.304 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 16:30:37.311 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 16:30:37.314 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API) in 989.1731ms
+2023-09-07 16:30:37.315 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API)'
+2023-09-07 16:30:37.316 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7114/api/Employee/Delete/A25FA68B-9F8C-45DC-9056-E76461AB213F - - - 200 - application/json;+charset=utf-8 1012.3378ms
+2023-09-07 16:30:50.896 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7114/api/Employee/Delete/A25FA68B-9F8C-45DC-9056-E76461AB213E - -
+2023-09-07 16:30:50.899 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API)'
+2023-09-07 16:30:50.900 +05:30 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 16:30:51.951 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 16:30:51.973 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Employees]
+OUTPUT 1
+WHERE [Id] = @p0;
+2023-09-07 16:30:51.983 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 16:30:51.984 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API) in 1079.0099ms
+2023-09-07 16:30:51.986 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API)'
+2023-09-07 16:30:51.988 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7114/api/Employee/Delete/A25FA68B-9F8C-45DC-9056-E76461AB213E - - - 200 - application/json;+charset=utf-8 1091.7220ms
+2023-09-07 16:41:39.075 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 16:41:39.105 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 16:41:39.107 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 16:41:39.107 +05:30 [INF] Hosting environment: Development
+2023-09-07 16:41:39.107 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 16:41:39.941 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 16:41:40.186 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 16:41:40.186 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 16:41:40.212 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 266.1073ms
+2023-09-07 16:41:40.212 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 25.1798ms
+2023-09-07 16:41:40.222 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.9160ms
+2023-09-07 16:41:40.278 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 16:41:40.394 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 116.0545ms
+2023-09-07 16:41:47.564 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Employee/GetById/A25FA68B-9F8C-45DC-9056-E76461AB213f - -
+2023-09-07 16:41:47.573 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.GetById (CrudOperation.API)'
+2023-09-07 16:41:47.595 +05:30 [INF] Route matched with {action = "GetById", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 16:41:50.984 +05:30 [INF] Executed DbCommand (43ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 16:42:00.048 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 16:42:00.075 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.GetById (CrudOperation.API) in 12471.5666ms
+2023-09-07 16:42:00.078 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.GetById (CrudOperation.API)'
+2023-09-07 16:42:00.088 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Employee/GetById/A25FA68B-9F8C-45DC-9056-E76461AB213f - - - 200 - application/json;+charset=utf-8 12523.5532ms
+2023-09-07 17:51:44.036 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 17:51:44.063 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 17:51:44.065 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 17:51:44.066 +05:30 [INF] Hosting environment: Development
+2023-09-07 17:51:44.066 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 17:51:44.967 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 17:51:45.229 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 267.1904ms
+2023-09-07 17:51:45.237 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 17:51:45.237 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 17:51:45.248 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 10.6341ms
+2023-09-07 17:51:45.256 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.0279ms
+2023-09-07 17:51:45.316 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 17:51:45.438 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 122.3294ms
+2023-09-07 17:51:51.790 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Employee/GetAll - -
+2023-09-07 17:51:51.800 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API)'
+2023-09-07 17:51:51.818 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 17:51:52.796 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+2023-09-07 17:51:52.881 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudOperation.API.Models.DTO.EmployeeDto, CrudOperation.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-07 17:51:52.899 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API) in 1074.3998ms
+2023-09-07 17:51:52.900 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API)'
+2023-09-07 17:51:52.909 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Employee/GetAll - - - 200 - application/json;+charset=utf-8 1118.8207ms
+2023-09-07 17:52:07.416 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Employee/GetById/51d95689-c402-4e16-9c52-370c8c3765ac - -
+2023-09-07 17:52:07.419 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.GetById (CrudOperation.API)'
+2023-09-07 17:52:07.432 +05:30 [INF] Route matched with {action = "GetById", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 17:52:17.322 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 17:52:17.329 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.EmployeeDto'.
+2023-09-07 17:52:17.330 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.GetById (CrudOperation.API) in 9894.6426ms
+2023-09-07 17:52:17.331 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.GetById (CrudOperation.API)'
+2023-09-07 17:52:17.332 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Employee/GetById/51d95689-c402-4e16-9c52-370c8c3765ac - - - 200 - application/json;+charset=utf-8 9916.4129ms
+2023-09-07 17:52:28.234 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Employee/GetById/51d95689-c402-4e16-9c52-370c8c3765af - -
+2023-09-07 17:52:28.236 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.GetById (CrudOperation.API)'
+2023-09-07 17:52:28.237 +05:30 [INF] Route matched with {action = "GetById", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 17:52:29.820 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 17:52:29.825 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 17:52:29.841 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.GetById (CrudOperation.API) in 1602.9885ms
+2023-09-07 17:52:29.843 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.GetById (CrudOperation.API)'
+2023-09-07 17:52:29.844 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Employee/GetById/51d95689-c402-4e16-9c52-370c8c3765af - - - 200 - application/json;+charset=utf-8 1609.7976ms
+2023-09-07 17:52:58.114 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 273
+2023-09-07 17:52:58.121 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 17:52:58.125 +05:30 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 17:52:59.412 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (Size = 10), @p9='?' (DbType = Int64), @p10='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [City], [Company], [Country], [Email], [FirstName], [LastName], [Middlename], [Mobile], [Salary], [State])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2023-09-07 17:52:59.423 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 17:52:59.424 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API) in 1297.2975ms
+2023-09-07 17:52:59.425 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Create (CrudOperation.API)'
+2023-09-07 17:52:59.426 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7114/api/Employee/Create application/json 273 - 200 - application/json;+charset=utf-8 1311.9529ms
+2023-09-07 17:53:24.120 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7114/api/Employee/Update/97B9C3C3-F7B4-4B19-B133-D0873958F11E application/json 271
+2023-09-07 17:53:24.124 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API)'
+2023-09-07 17:53:24.129 +05:30 [INF] Route matched with {action = "Update", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 17:53:27.329 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 17:53:27.358 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Employees] SET [Salary] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2023-09-07 17:53:27.368 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 17:53:27.374 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API) in 3243.1457ms
+2023-09-07 17:53:27.376 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API)'
+2023-09-07 17:53:27.377 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7114/api/Employee/Update/97B9C3C3-F7B4-4B19-B133-D0873958F11E application/json 271 - 200 - application/json;+charset=utf-8 3257.4322ms
+2023-09-07 17:53:43.401 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7114/api/Employee/Update/97B9C3C3-F7B4-4B19-B133-D0873958F11f application/json 271
+2023-09-07 17:53:43.404 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API)'
+2023-09-07 17:53:43.406 +05:30 [INF] Route matched with {action = "Update", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, CrudOperation.API.Models.DTO.EmployeeDto) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 17:53:44.651 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 17:53:44.663 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 17:53:44.665 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API) in 1255.7893ms
+2023-09-07 17:53:44.667 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Update (CrudOperation.API)'
+2023-09-07 17:53:44.668 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7114/api/Employee/Update/97B9C3C3-F7B4-4B19-B133-D0873958F11f application/json 271 - 200 - application/json;+charset=utf-8 1267.0807ms
+2023-09-07 17:54:00.190 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7114/api/Employee/Delete/97B9C3C3-F7B4-4B19-B133-D0873958F11E - -
+2023-09-07 17:54:00.192 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API)'
+2023-09-07 17:54:00.197 +05:30 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 17:54:01.213 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 17:54:01.228 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Employees]
+OUTPUT 1
+WHERE [Id] = @p0;
+2023-09-07 17:54:01.236 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 17:54:01.238 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API) in 1038.7487ms
+2023-09-07 17:54:01.240 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API)'
+2023-09-07 17:54:01.241 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7114/api/Employee/Delete/97B9C3C3-F7B4-4B19-B133-D0873958F11E - - - 200 - application/json;+charset=utf-8 1050.6623ms
+2023-09-07 17:54:08.307 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7114/api/Employee/Delete/97B9C3C3-F7B4-4B19-B133-D0873958F11E - -
+2023-09-07 17:54:08.309 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API)'
+2023-09-07 17:54:08.310 +05:30 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 17:54:09.625 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0
+2023-09-07 17:54:09.634 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 17:54:09.636 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API) in 1323.4946ms
+2023-09-07 17:54:09.637 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.Delete (CrudOperation.API)'
+2023-09-07 17:54:09.638 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7114/api/Employee/Delete/97B9C3C3-F7B4-4B19-B133-D0873958F11E - - - 200 - application/json;+charset=utf-8 1331.0488ms
+2023-09-07 18:11:57.633 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-07 18:11:57.684 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-07 18:11:57.686 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-09-07 18:11:57.687 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-09-07 18:11:57.709 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-09-07 18:11:57.721 +05:30 [INF] Applying migration '20230907124141_Add Department Table'.
+2023-09-07 18:11:57.772 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Departments] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(50) NOT NULL,
+    [Description] nvarchar(50) NOT NULL,
+    CONSTRAINT [PK_Departments] PRIMARY KEY ([Id])
+);
+2023-09-07 18:11:57.775 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230907124141_Add Department Table', N'7.0.10');
+2023-09-07 18:46:53.163 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 18:46:53.183 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 18:46:53.185 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 18:46:53.185 +05:30 [INF] Hosting environment: Development
+2023-09-07 18:46:53.186 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 18:46:54.017 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 18:46:54.253 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 237.0653ms
+2023-09-07 18:46:54.263 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 18:46:54.263 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 18:46:54.284 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 20.2298ms
+2023-09-07 18:46:54.293 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.3099ms
+2023-09-07 18:46:54.335 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 18:46:54.412 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 77.2885ms
+2023-09-07 18:47:01.618 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Department/GetAll - -
+2023-09-07 18:47:01.628 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API)'
+2023-09-07 18:47:01.640 +05:30 [INF] Route matched with {action = "GetAll", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CrudOperation.API.Controllers.DepartmentController (CrudOperation.API).
+2023-09-07 18:47:01.645 +05:30 [INF] Executed action CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API) in 1.2301ms
+2023-09-07 18:47:01.648 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API)'
+2023-09-07 18:47:01.668 +05:30 [ERR] 341b0a15-214c-4a70-99f7-3437db49eb1f:Unable to resolve service for type 'CrudOperation.API.Repsitories.IDepartmentRepository' while attempting to activate 'CrudOperation.API.Controllers.DepartmentController'.
+System.InvalidOperationException: Unable to resolve service for type 'CrudOperation.API.Repsitories.IDepartmentRepository' while attempting to activate 'CrudOperation.API.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CrudOperation.API.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API\Middlewares\ExceptionHandlerMiddleware.cs:line 20
+2023-09-07 18:47:01.748 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Department/GetAll - - - 500 - application/json;+charset=utf-8 129.9427ms
+2023-09-07 18:47:03.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Department/GetAll - -
+2023-09-07 18:47:03.292 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API)'
+2023-09-07 18:47:03.293 +05:30 [INF] Route matched with {action = "GetAll", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CrudOperation.API.Controllers.DepartmentController (CrudOperation.API).
+2023-09-07 18:47:03.295 +05:30 [INF] Executed action CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API) in 0.4599ms
+2023-09-07 18:47:03.296 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API)'
+2023-09-07 18:47:03.310 +05:30 [ERR] 1977287a-442b-4a16-aed5-81e3a466560a:Unable to resolve service for type 'CrudOperation.API.Repsitories.IDepartmentRepository' while attempting to activate 'CrudOperation.API.Controllers.DepartmentController'.
+System.InvalidOperationException: Unable to resolve service for type 'CrudOperation.API.Repsitories.IDepartmentRepository' while attempting to activate 'CrudOperation.API.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CrudOperation.API.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API\Middlewares\ExceptionHandlerMiddleware.cs:line 20
+2023-09-07 18:47:03.314 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Department/GetAll - - - 500 - application/json;+charset=utf-8 25.1729ms
+2023-09-07 18:47:11.955 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Department/GetAll - -
+2023-09-07 18:47:11.956 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API)'
+2023-09-07 18:47:11.958 +05:30 [INF] Route matched with {action = "GetAll", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CrudOperation.API.Controllers.DepartmentController (CrudOperation.API).
+2023-09-07 18:47:11.960 +05:30 [INF] Executed action CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API) in 0.5272ms
+2023-09-07 18:47:11.961 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API)'
+2023-09-07 18:47:11.975 +05:30 [ERR] 96d1039b-cf8f-4a96-b9db-e82ef91d899c:Unable to resolve service for type 'CrudOperation.API.Repsitories.IDepartmentRepository' while attempting to activate 'CrudOperation.API.Controllers.DepartmentController'.
+System.InvalidOperationException: Unable to resolve service for type 'CrudOperation.API.Repsitories.IDepartmentRepository' while attempting to activate 'CrudOperation.API.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CrudOperation.API.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API\Middlewares\ExceptionHandlerMiddleware.cs:line 20
+2023-09-07 18:47:11.979 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Department/GetAll - - - 500 - application/json;+charset=utf-8 24.4484ms
+2023-09-07 18:47:16.897 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Department/GetAll - -
+2023-09-07 18:47:16.898 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API)'
+2023-09-07 18:47:16.899 +05:30 [INF] Route matched with {action = "GetAll", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CrudOperation.API.Controllers.DepartmentController (CrudOperation.API).
+2023-09-07 18:47:16.901 +05:30 [INF] Executed action CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API) in 0.4817ms
+2023-09-07 18:47:16.902 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API)'
+2023-09-07 18:47:16.914 +05:30 [ERR] 7b53395e-1704-4c75-b921-502a47a06537:Unable to resolve service for type 'CrudOperation.API.Repsitories.IDepartmentRepository' while attempting to activate 'CrudOperation.API.Controllers.DepartmentController'.
+System.InvalidOperationException: Unable to resolve service for type 'CrudOperation.API.Repsitories.IDepartmentRepository' while attempting to activate 'CrudOperation.API.Controllers.DepartmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CrudOperation.API.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API\Middlewares\ExceptionHandlerMiddleware.cs:line 20
+2023-09-07 18:47:16.917 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Department/GetAll - - - 500 - application/json;+charset=utf-8 20.5817ms
+2023-09-07 18:47:58.026 +05:30 [INF] Now listening on: https://localhost:7114
+2023-09-07 18:47:58.049 +05:30 [INF] Now listening on: http://localhost:5208
+2023-09-07 18:47:58.050 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-07 18:47:58.051 +05:30 [INF] Hosting environment: Development
+2023-09-07 18:47:58.052 +05:30 [INF] Content root path: D:\Angular16\27-crud-operation-using-asp.net-core-api-(.NET-7.0)\CrudOperation.API\CrudOperation.API
+2023-09-07 18:47:58.901 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-09-07 18:47:59.101 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 200.1625ms
+2023-09-07 18:47:59.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-09-07 18:47:59.107 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-09-07 18:47:59.117 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 12.6722ms
+2023-09-07 18:47:59.125 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.1863ms
+2023-09-07 18:47:59.173 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-09-07 18:47:59.260 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 87.1428ms
+2023-09-07 18:48:03.816 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Employee/GetAll - -
+2023-09-07 18:48:03.826 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API)'
+2023-09-07 18:48:03.837 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CrudOperation.API.Controllers.EmployeeController (CrudOperation.API).
+2023-09-07 18:48:06.365 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[City], [e].[Company], [e].[Country], [e].[Email], [e].[FirstName], [e].[LastName], [e].[Middlename], [e].[Mobile], [e].[Salary], [e].[State]
+FROM [Employees] AS [e]
+2023-09-07 18:48:06.430 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudOperation.API.Models.DTO.EmployeeDto, CrudOperation.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-07 18:48:06.451 +05:30 [INF] Executed action CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API) in 2608.4448ms
+2023-09-07 18:48:06.453 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.EmployeeController.GetAll (CrudOperation.API)'
+2023-09-07 18:48:06.464 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Employee/GetAll - - - 200 - application/json;+charset=utf-8 2648.0726ms
+2023-09-07 18:48:11.202 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Department/GetAll - -
+2023-09-07 18:48:11.205 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API)'
+2023-09-07 18:48:11.209 +05:30 [INF] Route matched with {action = "GetAll", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CrudOperation.API.Controllers.DepartmentController (CrudOperation.API).
+2023-09-07 18:48:12.802 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Description], [d].[Name]
+FROM [Departments] AS [d]
+2023-09-07 18:48:12.810 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudOperation.API.Models.DTO.DepartmentDto, CrudOperation.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-07 18:48:12.812 +05:30 [INF] Executed action CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API) in 1601.7201ms
+2023-09-07 18:48:12.814 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API)'
+2023-09-07 18:48:12.815 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Department/GetAll - - - 200 - application/json;+charset=utf-8 1613.3683ms
+2023-09-07 18:48:48.573 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7114/api/Department/Create application/json 109
+2023-09-07 18:48:48.576 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.DepartmentController.Create (CrudOperation.API)'
+2023-09-07 18:48:48.587 +05:30 [INF] Route matched with {action = "Create", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CrudOperation.API.Models.DTO.DepartmentDto) on controller CrudOperation.API.Controllers.DepartmentController (CrudOperation.API).
+2023-09-07 18:48:54.428 +05:30 [INF] Executed DbCommand (107ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Departments] ([Id], [Description], [Name])
+VALUES (@p0, @p1, @p2);
+2023-09-07 18:49:00.142 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 18:49:00.150 +05:30 [INF] Executed action CrudOperation.API.Controllers.DepartmentController.Create (CrudOperation.API) in 11561.572ms
+2023-09-07 18:49:00.151 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.DepartmentController.Create (CrudOperation.API)'
+2023-09-07 18:49:00.151 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7114/api/Department/Create application/json 109 - 200 - application/json;+charset=utf-8 11578.0117ms
+2023-09-07 18:49:38.444 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7114/api/Department/Create application/json 101
+2023-09-07 18:49:38.448 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.DepartmentController.Create (CrudOperation.API)'
+2023-09-07 18:49:38.449 +05:30 [INF] Route matched with {action = "Create", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CrudOperation.API.Models.DTO.DepartmentDto) on controller CrudOperation.API.Controllers.DepartmentController (CrudOperation.API).
+2023-09-07 18:49:39.854 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Departments] ([Id], [Description], [Name])
+VALUES (@p0, @p1, @p2);
+2023-09-07 18:49:39.857 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 18:49:39.858 +05:30 [INF] Executed action CrudOperation.API.Controllers.DepartmentController.Create (CrudOperation.API) in 1407.281ms
+2023-09-07 18:49:39.863 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.DepartmentController.Create (CrudOperation.API)'
+2023-09-07 18:49:39.863 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7114/api/Department/Create application/json 101 - 200 - application/json;+charset=utf-8 1419.1382ms
+2023-09-07 18:49:45.158 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Department/GetAll - -
+2023-09-07 18:49:45.159 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API)'
+2023-09-07 18:49:45.160 +05:30 [INF] Route matched with {action = "GetAll", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CrudOperation.API.Controllers.DepartmentController (CrudOperation.API).
+2023-09-07 18:49:46.299 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Description], [d].[Name]
+FROM [Departments] AS [d]
+2023-09-07 18:49:46.302 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudOperation.API.Models.DTO.DepartmentDto, CrudOperation.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-07 18:49:46.304 +05:30 [INF] Executed action CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API) in 1141.4985ms
+2023-09-07 18:49:46.305 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.DepartmentController.GetAll (CrudOperation.API)'
+2023-09-07 18:49:46.305 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Department/GetAll - - - 200 - application/json;+charset=utf-8 1147.2954ms
+2023-09-07 18:50:03.421 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Department/GetById/82915553-773c-4355-bef7-d02ff678fafd - -
+2023-09-07 18:50:03.423 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.DepartmentController.GetById (CrudOperation.API)'
+2023-09-07 18:50:03.430 +05:30 [INF] Route matched with {action = "GetById", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller CrudOperation.API.Controllers.DepartmentController (CrudOperation.API).
+2023-09-07 18:50:05.554 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Description], [d].[Name]
+FROM [Departments] AS [d]
+WHERE [d].[Id] = @__id_0
+2023-09-07 18:50:05.556 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.DepartmentDto'.
+2023-09-07 18:50:05.557 +05:30 [INF] Executed action CrudOperation.API.Controllers.DepartmentController.GetById (CrudOperation.API) in 2125.125ms
+2023-09-07 18:50:05.559 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.DepartmentController.GetById (CrudOperation.API)'
+2023-09-07 18:50:05.559 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Department/GetById/82915553-773c-4355-bef7-d02ff678fafd - - - 200 - application/json;+charset=utf-8 2138.0680ms
+2023-09-07 18:50:12.448 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7114/api/Department/GetById/82915553-773c-4355-bef7-d02ff678faff - -
+2023-09-07 18:50:12.449 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.DepartmentController.GetById (CrudOperation.API)'
+2023-09-07 18:50:12.450 +05:30 [INF] Route matched with {action = "GetById", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller CrudOperation.API.Controllers.DepartmentController (CrudOperation.API).
+2023-09-07 18:50:13.589 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Description], [d].[Name]
+FROM [Departments] AS [d]
+WHERE [d].[Id] = @__id_0
+2023-09-07 18:50:13.591 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 18:50:13.592 +05:30 [INF] Executed action CrudOperation.API.Controllers.DepartmentController.GetById (CrudOperation.API) in 1139.7571ms
+2023-09-07 18:50:13.593 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.DepartmentController.GetById (CrudOperation.API)'
+2023-09-07 18:50:13.594 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7114/api/Department/GetById/82915553-773c-4355-bef7-d02ff678faff - - - 200 - application/json;+charset=utf-8 1146.8559ms
+2023-09-07 18:50:39.453 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7114/api/Department/Update/64B96152-86F0-4D4F-96D7-FF681DEC613C application/json 97
+2023-09-07 18:50:39.460 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.DepartmentController.Update (CrudOperation.API)'
+2023-09-07 18:50:39.464 +05:30 [INF] Route matched with {action = "Update", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, CrudOperation.API.Models.DTO.DepartmentDto) on controller CrudOperation.API.Controllers.DepartmentController (CrudOperation.API).
+2023-09-07 18:50:40.406 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Description], [d].[Name]
+FROM [Departments] AS [d]
+WHERE [d].[Id] = @__id_0
+2023-09-07 18:50:40.410 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 18:50:40.411 +05:30 [INF] Executed action CrudOperation.API.Controllers.DepartmentController.Update (CrudOperation.API) in 945.981ms
+2023-09-07 18:50:40.412 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.DepartmentController.Update (CrudOperation.API)'
+2023-09-07 18:50:40.413 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7114/api/Department/Update/64B96152-86F0-4D4F-96D7-FF681DEC613C application/json 97 - 200 - application/json;+charset=utf-8 959.9523ms
+2023-09-07 18:51:19.986 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7114/api/Department/Update/9DA239F5-86D5-4632-B8D3-2608A4AA12CC application/json 99
+2023-09-07 18:51:19.992 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.DepartmentController.Update (CrudOperation.API)'
+2023-09-07 18:51:19.993 +05:30 [INF] Route matched with {action = "Update", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, CrudOperation.API.Models.DTO.DepartmentDto) on controller CrudOperation.API.Controllers.DepartmentController (CrudOperation.API).
+2023-09-07 18:51:23.194 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Description], [d].[Name]
+FROM [Departments] AS [d]
+WHERE [d].[Id] = @__id_0
+2023-09-07 18:51:23.207 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?' (Size = 50), @p1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Departments] SET [Description] = @p0, [Name] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2023-09-07 18:51:23.211 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 18:51:23.212 +05:30 [INF] Executed action CrudOperation.API.Controllers.DepartmentController.Update (CrudOperation.API) in 3213.9853ms
+2023-09-07 18:51:23.213 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.DepartmentController.Update (CrudOperation.API)'
+2023-09-07 18:51:23.213 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7114/api/Department/Update/9DA239F5-86D5-4632-B8D3-2608A4AA12CC application/json 99 - 200 - application/json;+charset=utf-8 3228.2215ms
+2023-09-07 18:51:46.755 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7114/api/Department/Delete/9DA239F5-86D5-4632-B8D3-2608A4AA12CF - -
+2023-09-07 18:51:46.760 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.DepartmentController.Delete (CrudOperation.API)'
+2023-09-07 18:51:46.765 +05:30 [INF] Route matched with {action = "Delete", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller CrudOperation.API.Controllers.DepartmentController (CrudOperation.API).
+2023-09-07 18:51:47.681 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Description], [d].[Name]
+FROM [Departments] AS [d]
+WHERE [d].[Id] = @__id_0
+2023-09-07 18:51:47.687 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 18:51:47.688 +05:30 [INF] Executed action CrudOperation.API.Controllers.DepartmentController.Delete (CrudOperation.API) in 921.123ms
+2023-09-07 18:51:47.689 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.DepartmentController.Delete (CrudOperation.API)'
+2023-09-07 18:51:47.690 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7114/api/Department/Delete/9DA239F5-86D5-4632-B8D3-2608A4AA12CF - - - 200 - application/json;+charset=utf-8 936.1598ms
+2023-09-07 18:51:55.167 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7114/api/Department/Delete/9DA239F5-86D5-4632-B8D3-2608A4AA12CC - -
+2023-09-07 18:51:55.168 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.DepartmentController.Delete (CrudOperation.API)'
+2023-09-07 18:51:55.168 +05:30 [INF] Route matched with {action = "Delete", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller CrudOperation.API.Controllers.DepartmentController (CrudOperation.API).
+2023-09-07 18:51:56.076 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Description], [d].[Name]
+FROM [Departments] AS [d]
+WHERE [d].[Id] = @__id_0
+2023-09-07 18:51:56.085 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Departments]
+OUTPUT 1
+WHERE [Id] = @p0;
+2023-09-07 18:51:56.091 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 18:51:56.092 +05:30 [INF] Executed action CrudOperation.API.Controllers.DepartmentController.Delete (CrudOperation.API) in 921.5349ms
+2023-09-07 18:51:56.093 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.DepartmentController.Delete (CrudOperation.API)'
+2023-09-07 18:51:56.093 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7114/api/Department/Delete/9DA239F5-86D5-4632-B8D3-2608A4AA12CC - - - 200 - application/json;+charset=utf-8 926.6801ms
+2023-09-07 18:52:00.143 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7114/api/Department/Delete/9DA239F5-86D5-4632-B8D3-2608A4AA12CC - -
+2023-09-07 18:52:00.144 +05:30 [INF] Executing endpoint 'CrudOperation.API.Controllers.DepartmentController.Delete (CrudOperation.API)'
+2023-09-07 18:52:00.145 +05:30 [INF] Route matched with {action = "Delete", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller CrudOperation.API.Controllers.DepartmentController (CrudOperation.API).
+2023-09-07 18:52:01.192 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [d].[Id], [d].[Description], [d].[Name]
+FROM [Departments] AS [d]
+WHERE [d].[Id] = @__id_0
+2023-09-07 18:52:01.198 +05:30 [INF] Executing OkObjectResult, writing value of type 'CrudOperation.API.Models.DTO.ResponseDto'.
+2023-09-07 18:52:01.199 +05:30 [INF] Executed action CrudOperation.API.Controllers.DepartmentController.Delete (CrudOperation.API) in 1052.0582ms
+2023-09-07 18:52:01.203 +05:30 [INF] Executed endpoint 'CrudOperation.API.Controllers.DepartmentController.Delete (CrudOperation.API)'
+2023-09-07 18:52:01.204 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7114/api/Department/Delete/9DA239F5-86D5-4632-B8D3-2608A4AA12CC - - - 200 - application/json;+charset=utf-8 1060.9928ms

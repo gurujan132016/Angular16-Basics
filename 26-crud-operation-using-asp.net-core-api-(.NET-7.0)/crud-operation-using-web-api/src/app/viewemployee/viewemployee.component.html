@@ -1,0 +1,55 @@
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-sm-12">
+          <button class="btn btn-info" (click)="redirectToEmployeeListPage()">
+            <i class="bi bi-arrow-left-circle"></i> Back
+        </button>
+          <h2>Employee Details</h2> 
+        </div>
+      </div>         
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>First Name</td>
+          <td>{{employee.firstName}}</td>
+        </tr>
+        <tr>
+          <td>Middle Name</td>
+          <td>{{employee.middleName}}</td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td>{{employee.lastName}}</td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>{{employee.email}}</td>
+        </tr>
+        <tr>
+            <td>Mobile</td>
+            <td>{{employee.mobile}}</td>
+        </tr>
+        <tr>
+            <td>Company</td>
+            <td>{{employee.company}}</td>
+        </tr>
+        <tr>
+            <td>Salary</td>
+            <td>{{employee.salary}}</td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>{{employee.country}}</td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td>{{employee.state}}</td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>{{employee.city}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
