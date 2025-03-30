@@ -22,5 +22,10 @@ import { Component4Component } from './component4/component4.component';
   ],
   providers: [],
   bootstrap: [AppComponent]
+  
 })
-export class AppModule { }
+export class AppModule { 
+  constructor() {
+    console.log("App Module loaded");
+  }
+}

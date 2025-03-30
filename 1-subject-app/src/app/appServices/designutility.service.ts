@@ -9,7 +9,7 @@ export class DesignutilityService {
   constructor() { }
 
   //Subject. Here we can not define the initial value.
-  //username=new Subject<any>();
+  //username=new Subject<any>("Gurunathan");
 
   //BehaviorSubject. Here we can define the initial value and it will be reflected to all the components.
   userName=new BehaviorSubject("Code Circulation")
